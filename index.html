@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las leyes de la robótica | Cibercolegio UCN</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div id="app" class="app-shell">
+    <header class="topbar" id="topbar" hidden>
+      <button class="icon-btn" id="homeBtn" type="button" aria-label="Volver al inicio" title="Inicio">⌂</button>
+      <div class="brand">
+        <img src="logo-ciber-ucn.png" alt="Logo Cibercolegio UCN">
+        <div>
+          <strong>Las leyes de la robótica</strong>
+          <span>Developed by Mary J. Galeano</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="soundBtn" type="button" aria-label="Activar o pausar sonido" title="Sonido">♫</button>
+        <button class="ghost-btn" id="resetBtn" type="button">Reiniciar</button>
+      </div>
+    </header>
+
+    <main id="screen" class="screen" aria-live="polite"></main>
+
+    <footer class="footer" id="footer" hidden>
+      <img src="logo-ciber-ucn.png" alt="Cibercolegio UCN">
+      <span>Cibercolegio UCN · Simulador educativo interactivo · Developed by Mary J. Galeano</span>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal-close" id="modalClose" type="button" aria-label="Cerrar" title="Cerrar">×</button>
+      <p class="eyebrow" id="modalKicker">Dilema</p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+      <div class="choice-list" id="modalChoices"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
